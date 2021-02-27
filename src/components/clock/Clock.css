@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+@keyframes preloaderWheel{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.bolder{
+    font-weight: 700;
+    color: #FCBF49;
+}
+
+.clock{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.clock__time{
+    font-size: 9vw;
+}
+
+.clock__time__number{
+    font-size: 14vw;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 20px 0 0;
+    text-align: center;
+}
+
+.clock__description{
+    color: #FCBF49;
+    font-size: 1.6vw;
+    margin-top: -10px;
+}
+
+.clock__preloader{
+    width: 30px;
+    height: 30px;
+
+    margin-top: 80px;
+
+    border-radius: 50%;
+    border-top: 6px rgb(77, 77, 77) solid;
+    border-right: 6px rgb(77, 77, 77) solid;
+    border-left: 6px transparent solid;
+    border-bottom: 6px transparent solid;
+
+    animation: preloaderWheel .3s ease-in-out 0s infinite forwards;
+}

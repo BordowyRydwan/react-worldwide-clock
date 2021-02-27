@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+@keyframes preloaderWheel{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.small_bolder{
+    font-weight: 700;
+    color: #FCBF49;
+}
+
+.smallclock{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 220px;
+    height: 70px;
+    margin: 20px;
+    background-color: #D62828;
+}
+
+.smallclock__time{
+    font-size: 1rem;
+}
+
+.smallclock__time__number{
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+.smallclock__description{
+    color: #FCBF49;
+    font-size: 1rem;
+}
+
+.smallclock__preloader{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border-top: 6px rgb(77, 77, 77) solid;
+    border-right: 6px rgb(77, 77, 77) solid;
+    border-left: 6px transparent solid;
+    border-bottom: 6px transparent solid;
+
+    animation: preloaderWheel .3s ease-in-out 0s infinite forwards;
+}
