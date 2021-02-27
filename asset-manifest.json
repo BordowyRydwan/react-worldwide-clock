@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-worldwide-clock/static/css/main.6e94ab81.chunk.css",
+    "main.js": "/react-worldwide-clock/static/js/main.cb94c182.chunk.js",
+    "main.js.map": "/react-worldwide-clock/static/js/main.cb94c182.chunk.js.map",
+    "runtime-main.js": "/react-worldwide-clock/static/js/runtime-main.acdd9250.js",
+    "runtime-main.js.map": "/react-worldwide-clock/static/js/runtime-main.acdd9250.js.map",
+    "static/js/2.40b8f132.chunk.js": "/react-worldwide-clock/static/js/2.40b8f132.chunk.js",
+    "static/js/2.40b8f132.chunk.js.map": "/react-worldwide-clock/static/js/2.40b8f132.chunk.js.map",
+    "index.html": "/react-worldwide-clock/index.html",
+    "static/css/main.6e94ab81.chunk.css.map": "/react-worldwide-clock/static/css/main.6e94ab81.chunk.css.map",
+    "static/js/2.40b8f132.chunk.js.LICENSE.txt": "/react-worldwide-clock/static/js/2.40b8f132.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acdd9250.js",
+    "static/js/2.40b8f132.chunk.js",
+    "static/css/main.6e94ab81.chunk.css",
+    "static/js/main.cb94c182.chunk.js"
+  ]
+}
