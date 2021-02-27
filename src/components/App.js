@@ -20,7 +20,7 @@ class App extends React.Component
     this._asyncRequest = fetch(apiURL)
                             .then(res => res.json())
                             .then(data => this.setState({responseList: data.slice()}))
-                            .then(() => this.fillRandomList(14))
+                            .then(() => this.fillRandomList())
                             .catch(err => console.log(err));
   }
 
@@ -33,17 +33,29 @@ class App extends React.Component
     let scope = this.state.responseList.length - 1;
     let indexes = [];
     let elements = [];
+    let validAreas = [
+      'Africa', 'America', 'Antarctica', 'Antarctica', 'Asia', 'Atlantic', 'Australia', 'Europe', 'Indian', 'Pacific'
+    ];
+    let cnt = 0;
 
-    for(let i = 0; i < amount; ++i){
+    while(cnt < amount){
+
       let random = Math.round(Math.random() * scope);
+      let isValidZone = false;
 
-      if(indexes.includes(random)){
-        while(indexes.includes(random)){
-          random = Math.round(Math.random() * scope);
+      for(let i = 0; i < validAreas.length; ++i){
+        let regex = new RegExp(validAreas[i]);
+
+        if(regex.test(this.state.responseList[random])){
+          isValidZone = true;
+          break;
         }
       }
 
-      indexes.push(random);
+      if(!indexes.includes(random) && isValidZone){
+        indexes.push(random);
+        cnt++;
+      }
     }
 
     indexes.forEach(index => elements.push(this.state.responseList[index]));
@@ -60,7 +72,7 @@ class App extends React.Component
           <Clock timeZone="local"/>
           <div className="smallclocks">
             {randomList.map((timezone, index) => (
-              <SmallClock timeZone={timezone} />
+              <SmallClock key={index} timeZone={timezone} />
             ))}
           </div>
           <footer>

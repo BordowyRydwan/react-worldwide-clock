@@ -78,9 +78,8 @@ class Clock extends React.Component
                                         timeZone: `${data.timezone} ${data.utc_offset}`
                                     })
                                 })
+                                .then(() => this.startTimer())
                                 .catch(err => console.log(err))
-
-        this.startTimer();
     }
     
     render(){
@@ -108,7 +107,7 @@ class Clock extends React.Component
                         </span>
                     </p>
                     <p className="clock__description">
-                        Your timezone: <span className="bolder">{this.state.timeZone}</span>
+                        {this.state.timeZone}
                     </p>
                 </div>
             );

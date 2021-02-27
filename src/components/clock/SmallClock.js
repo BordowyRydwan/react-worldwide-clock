@@ -19,6 +19,9 @@ class SmallClock extends Clock
         else{
             Object.keys(time).map((key, index) => time[key] = this.fillZeros(time[key]));
 
+            let arr = this.state.timeZone.split(' ')[0].split('/');
+            let outputStr = arr.length === 1 ? arr[0] : `${arr[arr.length - 1].split('_').join(' ')} (${arr[0]})`
+
             return(
                 <div className="smallclock">
                     <p className="smallclock__time">
@@ -35,7 +38,7 @@ class SmallClock extends Clock
                         </span>
                     </p>
                     <p className="smallclock__description">
-                        <span className="small_bolder">{this.state.timeZone.split(' ')[0]}</span>
+                        {outputStr}
                     </p>
                 </div>
             );

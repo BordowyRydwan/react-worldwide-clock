@@ -23,7 +23,7 @@
 
     width: 220px;
     height: 70px;
-    margin: 20px;
+    margin: 15px;
     background-color: #D62828;
 }
 
@@ -42,6 +42,7 @@
 .smallclock__description{
     color: #FCBF49;
     font-size: 1rem;
+    font-weight: 700;
 }
 
 .smallclock__preloader{
