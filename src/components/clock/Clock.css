@@ -24,7 +24,7 @@
 }
 
 .clock__time__number{
-    font-size: 14vw;
+    font-size: 15vw;
     font-weight: 900;
     letter-spacing: -0.05em;
     font-family: 'Roboto Mono', monospace;
@@ -35,7 +35,8 @@
 .clock__description{
     color: #FCBF49;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 2rem;
+    margin-top: -20px;
 }
 
 .clock__preloader{
@@ -51,4 +52,11 @@
     border-bottom: 6px transparent solid;
 
     animation: preloaderWheel .3s ease-in-out 0s infinite forwards;
+}
+
+@media (max-width: 600px){
+    .clock__description{
+        font-size: 1.3rem;
+        margin-top: 0px;
+    }
 }

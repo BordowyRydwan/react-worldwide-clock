@@ -29,10 +29,11 @@
 
 .smallclock__time{
     font-size: 1rem;
+    color: #FCBF49;
 }
 
 .smallclock__time__number{
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 900;
     letter-spacing: -0.05em;
     font-family: 'Roboto Mono', monospace;
@@ -40,9 +41,8 @@
 }
 
 .smallclock__description{
-    color: #FCBF49;
+    color: #EAE2B7;
     font-size: 1rem;
-    font-weight: 700;
 }
 
 .smallclock__preloader{
