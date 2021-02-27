@@ -63,10 +63,10 @@ class Clock extends React.Component
         let apiURL;
 
         if(this.props.timeZone === 'local'){
-            apiURL = 'http://worldtimeapi.org/api/ip';
+            apiURL = 'https://worldtimeapi.org/api/ip';
         }
         else{
-            apiURL = `http://worldtimeapi.org/api/timezone/${this.props.timeZone}`;
+            apiURL = `https://worldtimeapi.org/api/timezone/${this.props.timeZone}`;
         }
 
         this._asyncRequest = fetch(apiURL)

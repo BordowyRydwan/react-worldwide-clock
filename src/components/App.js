@@ -15,7 +15,7 @@ class App extends React.Component
   }
 
   componentDidMount(){
-    let apiURL = 'http://worldtimeapi.org/api/timezone';
+    let apiURL = 'https://worldtimeapi.org/api/timezone';
 
     this._asyncRequest = fetch(apiURL)
                             .then(res => res.json())
